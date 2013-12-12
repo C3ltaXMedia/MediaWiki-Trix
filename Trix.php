@@ -13,43 +13,32 @@ class SkinTrix extends SkinTemplate {
 			
 		$out->addHeadItem('personal.css','<style type="text/css">input[type="text"]:focus, textarea:focus, button:focus, a.button:focus, select:focus, input[type="file"]:focus, input[type="password"]:focus { border: 1px solid #50B1FE; box-shadow: 0 0 7px #6DB9FF; outline: medium none;}button.small, a.button.small{font-size:0.8em;padding:5px 10px;}.pill{border-radius:200em;}.pop{box-shadow:0px 1px 5px rgba(0,0,0,0.2);}.inset{box-shadow:inset 0px 1px 3px rgba(0,0,0,0.3);}.square{-moz-border-radius:0;-webkit-border-radius:0;-o-border-radius:0;border-radius:0;}#BreadCrumbsTrail { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #EEEEEE; color: #999999; font-size: 12px; margin-left: -12px; margin-right: -12px; padding: 10px 10px 10px 15px;}#BreadCrumbsTrail a { font-size:12px; color:#0099dd;}#uploadform { position:relative; width:280px; margin:3px auto 15px 8px; text-align:center;}#uploadform input { display:block; margin:3px auto;}div#useristoffline,div#useristonline { border: 1px solid #fff; padding: 5px; float:right; margin-top: 7px;}div#useristoffline span { color:red;}div#useristonline span { color:#0a0;}div#tabv-bg { background: url(' .$wgLocalStylePath. '/trix/designimages/tabv.bg.png); height: 32px; margin-left: -30px; width: 978px;}div#tabv-line { margin-top: 6px;}div.tabv-left { float:left; }div.tabv-right { float:right; }div#tabv-line a{ margin-left: 52px; margin-right: 52px;}strong.selflink { color: #2B2B2B !important;}strong.selflink span#tabv{ color:#aaa !important; background: url(' .$wgLocalStylePath. '/trix/designimages/tabv.png) no-repeat scroll center top transparent; color: #2B2B2B !important; cursor: default !important; text-shadow: 0 1px 0 #FFFFFF; padding-left: 1px;}span#tabv { padding-top: 8px; color: #7F7F7F;}a span#tabv { color: #7F7F7F; text-decoration:none !important; }div#tabv-line a:hover,div#tabv-line a:focus { color: #7F7F7F; text-decoration:none !important; }#box{ background:transparent; margin-bottom:-10px; padding-top:30px; width:980px;}#box div#inventar { font-size:12px; padding-left:20px; background:#eee; border:1px solid #ddd; color:#494848; text-shadow:1px 1px 0 white; font-family:Arial,Helvetica,sans-serif; margin-top: 6px;}ul#userline { list-style: none outside none; margin-left:-12px;}ul#userline li { display: inline; padding:5px;}</style>' );
 		$out->addHeadItem('Faviconapple', '<link rel="apple-touch-icon" href="/images/start/favicon/wb-applefavicon.png" />');
-		$out->addHeadItem('html', 			'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/html.css">');
-		$out->addHeadItem('header', 		'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/header.css">');
-		$out->addHeadItem('page', 			'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/page.css">');
-		$out->addHeadItem('navigation', 	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/navigation.css">');
-		$out->addHeadItem('content', 		'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/content.css">');
-		$out->addHeadItem('search', 		'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/includes/Suche/search.css">');
-		$out->addHeadItem('buttons', 		'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/buttons.css">');
-		$out->addHeadItem('breadcrumbs', 	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/breadcrumbs.css">');
-		$out->addHeadItem('images', 		'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/images.css">');
-		$out->addHeadItem('footer', 		'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/footer.css">');
-		$out->addHeadItem('starter', 		'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/wbstart.css">');
-		$out->addHeadItem('banner', 		'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/includes/Banner/banner.css">');
-		$out->addHeadItem('wbmenu.css',		'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/includes/Tabs/wbmenu.css">');
-		$out->addHeadItem("wbmenu.js",		'<script type="text/javascript" src="' .$wgLocalStylePath. '/trix/wbmenu.js"></script>');				
-		$out->addHeadItem('wbtemplate',		'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/wbtemplate.css">');
-		$out->addHeadItem("Inv.Core.js",	'<script type="text/javascript" src="' .$wgLocalStylePath. '/trix/site/Page/bouncebox-plugin/jquery.bouncebox.1.0.js"></script>');			
-		$out->addHeadItem("Inv.Wid.js",		'<script type="text/javascript" src="' .$wgLocalStylePath. '/trix/site/Page/bouncebox-plugin/jquery.easing.1.3.js"></script>');			
-		$out->addHeadItem("Inv.Tab.js",		'<script type="text/javascript" src="' .$wgLocalStylePath. '/trix/site/Page/bouncebox-plugin/pscript.js"></script>');			
-		$out->addHeadItem("perso3",'<script type="text/javascript" src="' .$wgLocalStylePath. '/trix/includes/BenutzerInventar/src/jquery.poshytip.js"></script>');		
+		$out->addHeadItem('html', 	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/html.css">');
+		$out->addHeadItem('header', 	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/header.css">');
+		$out->addHeadItem('page', 	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/page.css">');
+		$out->addHeadItem('navigation', '<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/navigation.css">');
+		$out->addHeadItem('content', 	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/content.css">');
+		$out->addHeadItem('search', 	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/includes/Suche/search.css">');
+		$out->addHeadItem('buttons', 	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/buttons.css">');
+		$out->addHeadItem('breadcrumbs', '<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/breadcrumbs.css">');
+		$out->addHeadItem('images', 	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/images.css">');
+		$out->addHeadItem('footer', 	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/footer.css">');
+		$out->addHeadItem('starter', 	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/wbstart.css">');
+		$out->addHeadItem('banner', 	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/includes/Banner/banner.css">');
+		$out->addHeadItem('wbmenu.css',	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/includes/Tabs/wbmenu.css">');
+		$out->addHeadItem("wbmenu.js",	'<script type="text/javascript" src="' .$wgLocalStylePath. '/trix/wbmenu.js"></script>');				
+		$out->addHeadItem('wbtemplate',	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/wbtemplate.css">');
+		$out->addHeadItem("Inv.Core.js",'<script type="text/javascript" src="' .$wgLocalStylePath. '/trix/site/Page/bouncebox-plugin/jquery.bouncebox.1.0.js"></script>');			
+		$out->addHeadItem("Inv.Wid.js",	'<script type="text/javascript" src="' .$wgLocalStylePath. '/trix/site/Page/bouncebox-plugin/jquery.easing.1.3.js"></script>');			
+		$out->addHeadItem("Inv.Tab.js",	'<script type="text/javascript" src="' .$wgLocalStylePath. '/trix/site/Page/bouncebox-plugin/pscript.js"></script>');			
+		$out->addHeadItem("perso3",	'<script type="text/javascript" src="' .$wgLocalStylePath. '/trix/includes/BenutzerInventar/src/jquery.poshytip.js"></script>');		
 		$out->addHeadItem("jq-ui",	'<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>');
 		$out->addHeadItem("jq-box",	'<script type="text/javascript" src="' .$wgLocalStylePath. '/trix/includes/AvatarUploader/jquery.ulightbox.js"></script>');
-		$out->addHeadItem('css-box','<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/includes/AvatarUploader/jquery.ulightbox.css">');		
-		$out->addHeadItem("JS-SuppVid",		'<script type="text/javascript" src="' .$wgLocalStylePath. '/trix/includes/SupportVideos/jquery.youtubeplaylist.js"></script>');
-		$out->addHeadItem( "JS-SuppVideoSettings","<script type='text/javascript'>
-					$(function() {
-						$('ul.video').ytplaylist({addThumbs:true, autoPlay: true, holderId: 'ytvideo'});
-					});
-				  </script>" );	
-		$out->addHeadItem('CSS-SuppVid',	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/includes/SupportVideos/jquery.youtubeplaylist.css">');
-		$out->addHeadItem( "Flattr-Link","<script type='text/javascript'>
-   				 (function() {
-        						var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-        						s.type = 'text/javascript';
-       						 	s.async = true;
-        						s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-        						t.parentNode.insertBefore(s, t);
-    			})();</script>");
+		$out->addHeadItem('css-box',	'<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/includes/AvatarUploader/jquery.ulightbox.css">');		
+		$out->addHeadItem("JS-SuppVid",	'<script type="text/javascript" src="' .$wgLocalStylePath. '/trix/includes/SupportVideos/jquery.youtubeplaylist.js"></script>');
+		$out->addHeadItem("JS-SuppVideoSettings","<script type='text/javascript'>$(function() { $('ul.video').ytplaylist({addThumbs:true, autoPlay: true, holderId: 'ytvideo'}); });</script>");	
+		$out->addHeadItem('CSS-SuppVid', '<link rel="stylesheet" type="text/css" href="' .$wgLocalStylePath. '/trix/includes/SupportVideos/jquery.youtubeplaylist.css">');
+		$out->addHeadItem("Flattr-Link","<script type='text/javascript'> (function() { var s = document.createElement('script'), t = document.getElementsByTagName('script')[0]; s.type = 'text/javascript'; s.async = true; s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto'; t.parentNode.insertBefore(s, t);	})();</script>");
 
 	}
 }
@@ -121,8 +110,8 @@ while ($adr = mysql_fetch_array($siteuser_ext_meta_info)) 	{
 }
 ?>
 <div id="content">
-			<a id="top"></a>
-			<div id="mw-js-message" style="display:none;"<?php $this->html( 'userlangattributes' ) ?>></div>		
+<a id="top"></a>
+<div id="mw-js-message" style="display:none;"<?php $this->html( 'userlangattributes' ) ?>></div>		
 <?php if($this->data['loggedin']) { ?>			
 <div style="background: url('<?php global $wgServer; echo $wgServer?>userblende-down') #fff;">
 </div>
@@ -167,44 +156,7 @@ while ($adr = mysql_fetch_array($siteuser_ext_meta_info)) 	{
 ?></div>
 <div style="margin-top:6px; <?php if($this->data['loggedin']) { ?>display:none;<?php } ?>">
 </div>
-<? 
-/*
-	#Ladebalken CSS
-*/
-echo '<style type="text/css">
-.expand { 
-	height:1px; 
-		padding:0 !important;
-		margin:2px;
-	background:#2187e7; 
-	position:absolute;
-	box-shadow:0px 0px 10px 1px rgba(0,198,255,0.4);
-}
-.dreamweaver { 
-	width:971px; 
-	-moz-animation:dreamweaver 5s ease-out; 
-	-webkit-animation:dreamweaver 5s ease-out; 
-}
-@-moz-keyframes dreamweaver { 
-	0%  	{ width:0px;  } 
-	100%	{ width:970px; } 
-}
-@-webkit-keyframes dreamweaver { 
-	0%  	{ width:0px;  } 
-	100%	{ width:970px; } 
-}
-#load {
-	background: #EEEEEE;
-    border: 1px solid #DDDDDD;
-    border-radius: 3px 3px 3px 3px;
-    height: 5px;
-	width:975px;
-	margin-top:5px;
-	margin-bottom:5px;
-}
-</style>
-' 
-?><div id="load"><span class="expand dreamweaver"></span></div>
+<div id="load"><span class="expand dreamweaver"></span></div>
 
 		<div id="wb-banner" style="<?php 
 		#---------------------------------
@@ -228,7 +180,7 @@ init("footer":$5 - $4 . "%2%4%1", "BenutzerInventar", 8);
 
 	 $this->printTrail(); 
 ?>
-	</body>
+</body>
 </html>
 <?php
 	}
